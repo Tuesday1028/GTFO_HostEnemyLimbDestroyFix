@@ -1,1 +1,1 @@
-# Hikaria.HostEnemyLimbDestroyFix
+# GTFO_HostEnemyLimbDestroyFix
