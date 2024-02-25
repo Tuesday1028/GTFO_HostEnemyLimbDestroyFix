@@ -53,7 +53,6 @@ public static class Patches
                 continue;
             dam.SendDestroyLimb(tuple.Item2, tuple.Item3);
         }
-
     }
 
     [HarmonyPatch(typeof(Dam_EnemyDamageBase), nameof(Dam_EnemyDamageBase.SendDestroyLimb))]
@@ -68,7 +67,7 @@ public static class Patches
         return true;
     }
 
-    private static bool AllowDestroyLimb;
+    private static bool AllowDestroyLimb = true;
 
     private static Queue<Tuple<Dam_EnemyDamageBase, int, sDestructionEventData>> DestroyLimbDataQueue = new();
 }
